@@ -6,8 +6,11 @@
   "scripts": {},
   "dependencies": {
     "nano-grid": "file:../app_web_module_nanogrid",
+    "vue": "^2.6.11"
   },
-  
+  "devDependencies": {
+    "typescript": "~4.1.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miguel-rivas"
