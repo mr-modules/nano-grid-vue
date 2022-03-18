@@ -1,1 +1,6 @@
-nano-grid-vue
+# Nano Grid
+
+## publish new version
+```bash
+yarn publish
+```
