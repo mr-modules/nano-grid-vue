@@ -17,9 +17,11 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Icon from "./icon.vue";
 import { colorsType } from "../types/colors";
 
 export default Vue.extend({
+  components: { Icon },
   props: {
     tag: {
       type: String,
@@ -59,7 +61,7 @@ export default Vue.extend({
     mode: {
       type: String,
       default: "flat",
-    }
+    },
   },
   computed: {
     buttonType(): string {

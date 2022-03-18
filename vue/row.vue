@@ -14,7 +14,7 @@
 import Vue from "vue";
 import { breakpointsType } from "../types/breakpoints";
 import { spacingType } from "../types/spacing";
-import { validateSpacing } from "nano-grid/modules/columns-manager";
+import { validateSpacing } from "nano-grid/modules/columns-manager.js";
 
 export default Vue.extend({
   /*

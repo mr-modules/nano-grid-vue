@@ -5,7 +5,7 @@
     </column>
     <column size="100%">
       <row group>
-        <prefix size="35">
+        <column mode="prefix" size="35">
           <btn
             @click="decrease()"
             size="md"
@@ -13,11 +13,11 @@
             color="gravel"
             title="Decrease button"
           />
-        </prefix>
+        </column>
         <column size="100%-35*2">
           <p class="input-label" v-html="val" />
         </column>
-        <suffix size="35">
+        <column mode="suffix" size="35">
           <btn
             @click="increase()"
             size="md"
@@ -25,7 +25,7 @@
             color="gravel"
             title="Increase button"
           />
-        </suffix>
+        </column>
       </row>
     </column>
   </row>
@@ -33,8 +33,12 @@
 
 <script>
 import Vue from "vue";
+import Row from "./row.vue";
+import Column from "./column.vue";
+import Btn from "./btn.vue";
 
 export default Vue.extend({
+  components: { Row, Column, Btn },
   inheritAttrs: false,
   props: {
     label: {
